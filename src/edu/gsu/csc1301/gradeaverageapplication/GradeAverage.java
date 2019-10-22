@@ -77,7 +77,18 @@ public class GradeAverage {
 		
 		//Output
 		
+		System.out.printf("Grade Average:  %.2f \n", weightedAverage);
+		System.out.printf("Letter Grade:   " + letterGrade);
 		
+		if (letterGrade == 'A' || letterGrade == 'B' || letterGrade == 'C' )
+		{
+			System.out.print("Good Job! You met the the prerequisite for the next course.");	
+		}
+		else
+		{
+			System.out.print("I'm sorry! You will need to repeat the course to advance.");
+		}
+				
 
 	}
 
