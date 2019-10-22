@@ -45,6 +45,11 @@ public class GradeAverage {
 		
 		double testAverage = (testOne + testTwo + testThree) / 3;
 		
+		double testWeighing = testAverage * TEST_WEIGHT;
+		double midtermWeighing = midtermExam * MIDTERM_WEIGHT;
+		double finalWeighing = finalExam * FINAL_WEIGHT;
+		
+		
 		//Output
 
 	}
