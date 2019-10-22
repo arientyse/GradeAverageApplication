@@ -39,6 +39,8 @@ public class GradeAverage {
 		
 		System.out.print("What was your Final Exam Score?");
 		double finalExam = in.nextDouble();
+		
+		in.close();
 
 		
 		//Computation
@@ -56,7 +58,22 @@ public class GradeAverage {
 		{
 			letterGrade = 'A';
 		}
-		
+		else if (weightedAverage >= 80 && weightedAverage <= 89)
+		{
+			letterGrade = 'B';
+		}
+		else if (weightedAverage >= 70 && weightedAverage <= 79)
+		{
+			letterGrade = 'C';
+		}
+		else if (weightedAverage >=60 && weightedAverage <= 69)
+		{
+			letterGrade = 'D';
+		}
+		else
+		{
+			letterGrade = 'F';
+		}
 		
 		//Output
 		
