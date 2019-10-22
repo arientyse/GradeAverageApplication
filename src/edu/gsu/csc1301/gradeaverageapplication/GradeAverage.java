@@ -37,6 +37,8 @@ public class GradeAverage {
 		
 		//Computation
 		
+		double testAverage = (testOne + testTwo + testThree) / 3;
+		
 		//Output
 
 	}
