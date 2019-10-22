@@ -1,7 +1,7 @@
 package edu.gsu.csc1301.gradeaverageapplication;
 
 /**
- * This creates a grade average for students by calculating their average overall percentage
+ * This finds the grade average for a student by calculating their average overall percentage
  * and letter grade, from previous test scores.
  * 
  * 
