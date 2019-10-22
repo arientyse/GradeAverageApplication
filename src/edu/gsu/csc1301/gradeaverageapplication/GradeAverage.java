@@ -78,7 +78,7 @@ public class GradeAverage {
 		//Output
 		
 		System.out.printf("Grade Average:  %.2f \n", weightedAverage);
-		System.out.printf("Letter Grade:   " + letterGrade);
+		System.out.println("Letter Grade:   " + letterGrade);
 		
 		if (letterGrade == 'A' || letterGrade == 'B' || letterGrade == 'C' )
 		{
