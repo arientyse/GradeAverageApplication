@@ -25,19 +25,19 @@ public class GradeAverage {
 		
 		//Input
 		
-		System.out.print("What was your score for Test One? ");
+		System.out.print("What was your score for Test One? "); //Asks for first test score
 		double testOne = in.nextDouble();
 		
-		System.out.print("What was your score for Test Two? ");
+		System.out.print("What was your score for Test Two? "); //Asks for second test score
 		double testTwo = in.nextDouble();
 		
-		System.out.print("What was your score for Test Three? ");
+		System.out.print("What was your score for Test Three? "); //Asks for third test score
 		double testThree = in.nextDouble();
 		
-		System.out.print("What was your Midterm Exam score? ");
+		System.out.print("What was your Midterm Exam score? "); //Asks for midterm exam score
 		double midtermExam = in.nextDouble();
 		
-		System.out.print("What was your Final Exam Score? ");
+		System.out.print("What was your Final Exam Score? "); //Asks for final exam score
 		double finalExam = in.nextDouble();
 		
 		in.close();
@@ -45,42 +45,43 @@ public class GradeAverage {
 		
 		//Computation
 		
-		double testAverage = (testOne + testTwo + testThree) / 3;
+		double testAverage = (testOne + testTwo + testThree) / 3; //Calculates the average of the three provided test scores
 		
-		double testWeighting = testAverage * TEST_WEIGHT;
-		double midtermWeighting = midtermExam * MIDTERM_WEIGHT;
-		double finalWeighting = finalExam * FINAL_WEIGHT;
+		double testWeighting = testAverage * TEST_WEIGHT; //Calculates the weighted average for the user's test scores
+		double midtermWeighting = midtermExam * MIDTERM_WEIGHT; //Calculates the weighted average for the user's midterm exam score
+		double finalWeighting = finalExam * FINAL_WEIGHT; //Calculates the weighted average for the user's final exam score
 		
-		double weightedAverage = testWeighting + midtermWeighting + finalWeighting;
+		double weightedAverage = testWeighting + midtermWeighting + finalWeighting; //Calculates the user's overall weighted average for the course
 		
 		char letterGrade;
-		if (weightedAverage >= 90 && weightedAverage <= 100)
+		if (weightedAverage >= 90 && weightedAverage <= 100) //Identifies a letter grade, A, as an average between 90 and 100
 		{
 			letterGrade = 'A';
 		}
-		else if (weightedAverage >= 80 && weightedAverage <= 89)
+		else if (weightedAverage >= 80 && weightedAverage <= 89) //Identifies a letter grade, B, as an average between 80 and 89
 		{
 			letterGrade = 'B';
 		}
-		else if (weightedAverage >= 70 && weightedAverage <= 79)
+		else if (weightedAverage >= 70 && weightedAverage <= 79) //Identifies a letter grade, C, as an average between 70 and 79
 		{
 			letterGrade = 'C';
 		}
-		else if (weightedAverage >=60 && weightedAverage <= 69)
+		else if (weightedAverage >=60 && weightedAverage <= 69) //Identifies a letter grade, D, as an average between 60 and 69
 		{
 			letterGrade = 'D';
 		}
-		else
+		else //Identifies averages lower than the above as an F
 		{
 			letterGrade = 'F';
 		}
 		
 		//Output
 		
-		System.out.printf("Grade Average:  %.2f \n", weightedAverage);
-		System.out.println("Letter Grade:   " + letterGrade);
+		System.out.println();
+		System.out.printf("Grade Average:  %.2f \n", weightedAverage); //Outputs the weighted average from the user's test, midterm exam, and final exam grades
+		System.out.println("Letter Grade:   " + letterGrade); //Outputs the calculated letter grade, based off of the user's weighted average
 		
-		if (letterGrade == 'A' || letterGrade == 'B' || letterGrade == 'C' )
+		if (letterGrade == 'A' || letterGrade == 'B' || letterGrade == 'C' ) //Outputs passing or failing statement based off of the letter grade calculated for the user
 		{
 			System.out.print("Good Job! You met the the prerequisite for the next course.");	
 		}
