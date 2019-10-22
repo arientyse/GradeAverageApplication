@@ -45,12 +45,22 @@ public class GradeAverage {
 		
 		double testAverage = (testOne + testTwo + testThree) / 3;
 		
-		double testWeighing = testAverage * TEST_WEIGHT;
-		double midtermWeighing = midtermExam * MIDTERM_WEIGHT;
-		double finalWeighing = finalExam * FINAL_WEIGHT;
+		double testWeighting = testAverage * TEST_WEIGHT;
+		double midtermWeighting = midtermExam * MIDTERM_WEIGHT;
+		double finalWeighting = finalExam * FINAL_WEIGHT;
+		
+		double weightedAverage = testWeighting + midtermWeighting + finalWeighting;
+		
+		char letterGrade;
+		if (weightedAverage >= 90 && weightedAverage <= 100)
+		{
+			letterGrade = 'A';
+		}
 		
 		
 		//Output
+		
+		
 
 	}
 
