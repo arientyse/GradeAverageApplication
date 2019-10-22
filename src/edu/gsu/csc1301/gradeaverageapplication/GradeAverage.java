@@ -25,6 +25,16 @@ public class GradeAverage {
 		
 		//Input
 		
+		System.out.print("What was your score for Test One?");
+		double testOne = in.nextDouble();
+		
+		System.out.print("What was your score for Test Two?");
+		double testTwo = in.nextDouble();
+		
+		System.out.print("What was your score for Test Three?");
+		double testThree = in.nextDouble();
+		
+		
 		//Computation
 		
 		//Output
