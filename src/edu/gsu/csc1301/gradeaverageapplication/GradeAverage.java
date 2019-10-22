@@ -25,19 +25,19 @@ public class GradeAverage {
 		
 		//Input
 		
-		System.out.print("What was your score for Test One?");
+		System.out.print("What was your score for Test One? ");
 		double testOne = in.nextDouble();
 		
-		System.out.print("What was your score for Test Two?");
+		System.out.print("What was your score for Test Two? ");
 		double testTwo = in.nextDouble();
 		
-		System.out.print("What was your score for Test Three?");
+		System.out.print("What was your score for Test Three? ");
 		double testThree = in.nextDouble();
 		
-		System.out.print("What was your Midterm Exam score?");
+		System.out.print("What was your Midterm Exam score? ");
 		double midtermExam = in.nextDouble();
 		
-		System.out.print("What was your Final Exam Score?");
+		System.out.print("What was your Final Exam Score? ");
 		double finalExam = in.nextDouble();
 		
 		in.close();
@@ -88,7 +88,6 @@ public class GradeAverage {
 		{
 			System.out.print("I'm sorry! You will need to repeat the course to advance.");
 		}
-				
 
 	}
 
